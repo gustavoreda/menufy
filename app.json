@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "menufy",
+    "slug": "menufy",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "expo": {
+      "userInterfaceStyle": "automatic"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.menufy"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.menufy"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "@react-native-google-signin/google-signin",
+      [
+        "expo-router",
+        {
+          "root": "./src/routes"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false,
+        "root": "./src/routes"
+      },
+      "eas": {
+        "projectId": "f685bb4c-7343-4935-a987-34ca313f36c3"
+      }
+    }
+  }
+}
